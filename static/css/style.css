@@ -1,0 +1,4 @@
+/* children of col-md-5 class, so that other images are not changed  */
+.col-md-5 img {
+    width: 100%;
+}
