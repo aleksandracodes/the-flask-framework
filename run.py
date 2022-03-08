@@ -1,6 +1,6 @@
 import os
 import json
-from flask import Flask, render_template # import Flask class
+from flask import Flask, render_template, request # import Flask class and libraries
 
 
 app = Flask(__name__)  # create an instance and store in a variable 'app'
@@ -33,8 +33,10 @@ def about_member(member_name):
     # 2nd member is the member object we created above on line 25.
 
 
-@app.route("/contact")
+@app.route("/contact", methods=["GET", "POST"])
 def contact():
+    if request.method == "POST":
+        print(request.form.get("name"))
     return render_template("contact.html", page_title="Contact")
 
 
