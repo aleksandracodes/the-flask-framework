@@ -1,3 +1,5 @@
+# Thorin and Company - the Flask framework
+
 A project created via Code Institute as part of Diploma in Full Stack Software Development.
 
 The project was an introduction to Flask with key topics covered:
